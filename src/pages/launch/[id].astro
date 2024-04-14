@@ -2,6 +2,8 @@
 import Layout from "../../layouts/Layout.astro";
 import { getLaunchBy } from "../../services/spacex";
 
+export const prerender = false; // To set up hybrid output
+
 const { id } = Astro.params;
 
 let launch;
